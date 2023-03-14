@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jay Santarina" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Oefining 11: Maandnamen</title>
+  </head>
+  <body>
+    <header>
+      <img src="media/kalender.png" alt="" class="logo" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="404.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="maanden-keuze">
+        <h2>Vertaal de huidige Nederlandse maandnaam in Oudnederlands</h2>
+        <form>
+          <label for="maanden">Kies de maand:</label>
+          <select id="maanden" name="maanden">
+            <option value="1">Eerste</option>
+            <option value="2">Tweede</option>
+            <option value="3">Derde</option>
+            <option value="4">Vierde</option>
+            <option value="5">Vijfde</option>
+            <option value="6">Zesde</option>
+            <option value="7">Zevende</option>
+            <option value="8">Achtste</option>
+            <option value="9">Negende</option>
+            <option value="10">Tiende</option>
+            <option value="11">Elfde</option>
+            <option value="12">Twaalfde</option>
+          </select>
+          <input
+            type="button"
+            value="Vertaal"
+            onclick="maandenVertalen()"
+            class="btn"
+          />
+        </form>
+
+        <div id="oudenederlandse-namen" class="hidden"></div>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">&copy; Copyright 2023-present: Tolken Gone Retro</p>
+      <p>All rights reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
