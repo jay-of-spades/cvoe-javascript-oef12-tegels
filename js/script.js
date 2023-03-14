@@ -43,7 +43,7 @@ const huidigeNamen = [
   'november',
   'december',
 ];
-function maandenVertalen() {
+function aantalTegelsBerekenen() {
   let gekozenMaand = select.value,
     orde,
     oude,
