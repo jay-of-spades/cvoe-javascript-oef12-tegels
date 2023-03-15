@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <img src="media/kalender.png" alt="" class="logo" />
+      <img src="media/tiles.svg" alt="" class="logo" />
     </header>
     <nav>
       <ul>
@@ -20,10 +20,31 @@
       </ul>
     </nav>
     <main>
-      <div id="maanden-keuze">
-        <h2>Vertaal de huidige Nederlandse maandnaam in Oudnederlands</h2>
+      <div id="tegeltjes">
+        <h2>Laten we de oppervlakte van de kamer berekenen</h2>
         <form>
-          <label for="maanden">Kies de maand:</label>
+          <label for="maanden">Kies de maat van uw tegels:</label>
+          <select id="tegels-maat" name="tegels-maat">
+            <option value="1">20x20cm</option>
+            <option value="2">30x30cm</option>
+            <option value="3">30x80cm</option>
+          </select>
+          <div class="input-flex">
+            <label for="lengte">Geef de lengte van uw kamer:</label>
+            <input
+              type="number"
+              placeholder="meter"
+              value="lengte"
+              id="lengte"
+            />
+            <label for="lengte">Geef de breedte van uw kamer:</label>
+            <input
+              type="number"
+              value="breedte"
+              placeholder="meter"
+              id="breedte"
+            />
+          </div>
 
           <input
             type="button"
@@ -33,7 +54,7 @@
           />
         </form>
 
-        <div id="oudenederlandse-namen" class="hidden"></div>
+        <div id="hoeveelheid-tegels" class="hidden"></div>
       </div>
     </main>
     <footer>
